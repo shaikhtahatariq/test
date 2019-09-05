@@ -1,41 +1,338 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE>
+        <html>
 <head>
     <meta charset="UTF-8">
     <title>Facebook Login</title>
-    <h3>FACEBOOK FORM</h3>
+    <style>
+        body{
+            margin:0;
+        }
+        header{
+            background-color:#3b5998;
+            height:88px;
+        }
+        .container{
+            width: 980px;
+            height: 88px;
+            margin:0 auto;
+
+        }
+        .login{
+            float: right;
+            width: 392px;
+            height: 82px;
+        }
+        .logo{
+            float: left;
+            height:60px;
+            width: 80px;
+        }
+        .forget {
+            padding-left: 165px;
+            float: left;
+
+        }
+        .form-group label{
+            color: white;
+            font-family: Arial;
+            font-size: 12px;
+        }
+        .form-group input {
+            color: black;
+            font-family: Arial;
+            font-size: 12px;
+            width: 150px;
+            height: 22px;
+            border-color: #1d2a5d;
+            border-width: 1px;
+        }
+        .forget a {
+            color: #9cb4d8;
+            text-decoration:none;
+            font-family: arial;
+            font-size: 12px;
+            margin-bottom: ;
+        }
+        .forget a :hover{
+            text-decoration: underline;
+        }
+        form{
+            margin-top: 15px;
+        }
+
+        button{
+            background-color: #4267b2;
+            color: white;
+            border-color: #29487d;
+            border-width: 1px;
+            padding: 4px 8px;
+            font-size: 12px;
+            font-family: arial;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #29487d;
+            text-decoration: none;
+        }
+        .form-group{
+            float: left;
+            width: 164px;
+
+        }
 
 
-<div>
-    <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        body {
+           margin: 0;
+        }
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        .left-box {
+            float: left;
+            width: 50%;
 
-        <label for="country">Country</label>
-        <select id="country" name="country">
-            <option value="pakistan">Pakistan</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-            <option value="uk">UK</option>
-            <option value="australia">Australia</option>
-        </select>
+        }
+        .right-box {
+            /* margin-top: -99px; */
+            float: right;
+            /* font-size: 26px; */
+            /* margin-right: 346px; */
+            font-family: sans-serif;
+            /* margin-bottom: -9px; */
+            width: 50%;
+            padding-left: 90px;
+            box-sizing: border-box;
+            margin: 24px 0 8px 0;
+            font-size: 29px;
+            margin-top: -17px;
+        }
+        .right-box1{
+            margin-top: 19px;
+            font-size: 19px;
+            margin-top: -25px;
+            font-family: inherit
+        }
+        .boxes{
+            width: 49%;
+            float: left;
+            margin-bottom: 10px;
+        }
+        .boxes input {
+            width: 100%;
+            height: 38px;
+            border-radius: 6px;
+            border: 1px solid #cecece;
+            font-size: 18px;
+            padding:0 15px;
+        }
+        .boxes1{
+            width: 49%;
+            float: right;
+            margin-bottom: 10px;
+        }
+        .boxes1 input {
+            width: 100%;
+            height: 38px;
+            border-radius: 6px;
+            border: 1px solid #cecece;
+            font-size: 18px;
+            padding:0 15px;
+        }
+        .boxes2{
+            width: 100%;
+            float: left;
+        }
+        .boxes2 input {
+            width: 100%;
+            height: 38px;
+            border-radius: 6px;
+            border: 1px solid #cecece;
+            font-size: 18px;
+            padding:0 15px;
+        }
+        .boxes3{
+            width: 100%;
+            float: left;
+        }
+        .boxes3 input{
+            width: 100%;
+            height: 38px;
+            border-radius: 6px;
+            border: 1px solid #cecece;
+            font-size: 18px;
+            margin: 13px 0px 0px 0;
+            padding: 0 15px;
+        }
+        select{
+            width: 58px;
+            height: 30px;
+        }
+        .select-box h4{
+            margin: 5px 0 0 0;
+            color: #90949c;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .select-box{
+            display: inline-block;
+            width: 100%;
+            margin: 0 0 10px 0;
+        }
+        .radio-box h4{
+            margin: 0;
+            font-size: 16px;
+            color: #90949c;
+            font-weight: bold;
+        }
+        label{
+            color: #1d2129;
+            font-size: 18px;
+        }
+        .radio-box{
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 12px;
+            color: #385898;
+        }
+        .button-box button{
+            background: linear-gradient(#67ae55, #578843);
+            width: 194px;
+            height: 39px;
+            font-size: 19px;
+             box-shadow: inset 0 1px 1px #a4e388;
+            border-color: #3b6e22 #3b6e22 #2c5115;
+            border: 1px solid;
+            border-radius: 5px;
 
-        </form>
-
-        <input type="terms and condition" value="TERMS AND CONDITION">
-    <form>
-        <label fro="gender">Gender: </label>
-        <input id="gender" type="radio">
-
-        <input type="checkbox">
-    </form>
-    </form>
-</div>
+        }
+        .color{
+            background: linear-gradient(white, #D3D8E8);
+            display: inline-block;
+            width: 100%;
+        }
 
 
+    </style>
+</head>
+<body>
+<header>
+    <header class="container">
 
+        <div class="logo">
+            <img src="screen.png"alt="logo">
+        </div>
+
+        <div class="login">
+            <form>
+
+                <div class="form-group">
+                    <label for="email">Email or phone</label>
+                    <input id="email" type="text">
+                </div>
+
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input id="password"type="text">
+                </div>
+
+
+                <button>Log In</button>
+            </form>
+            <div class="forget">
+                <a href="#">
+                    forgotten account?
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+</header>
+<section class="color">
+    <div class="container">
+
+        <div class="left-box">
+
+            <div>
+                <h2>Facebook helps you connect and share with the people in your life.</h2>
+            </div>
+
+
+            <div>
+                <img style="-webkit-user-select: none;margin: auto;" src="https://static.xx.fbcdn.net/rsrc.php/v3/yi/r/OBaVg52wtTZ.png?_nc_x=Ij3Wp8lg5Kz">
+            </div>
+
+        </div>
+        <div class="right-box">
+            <form>
+                <h2>
+                    Create an account
+                </h2>
+                <h3 class="right-box1">
+                    it's quick and easy.
+                </h3>
+                <div class="boxes">
+                    <label for="First name"></label>
+                    <input id="First name" type="input" placeholder="Firstname">
+                </div>
+                <div class="boxes1">
+                    <label for="Sure name"></label>
+                    <input id="Sure name" type="input" placeholder="Surname">
+                </div>
+                <div class="boxes2">
+                    <label for="Mobile Number or Email address"></label>
+                    <input id="Mobile Number or Email address" type="input" placeholder="Mobile Number or Email address">
+                </div>
+                <div class="boxes3">
+                    <label for="New Password"></label>
+                    <input id="New Password" type="input" placeholder="New password">
+                </div>
+                <div class="select-box">
+                    <h4>Birthday</h4>
+                    <select>
+                        <option value="volvo">1</option>
+                        <option value="saab">2</option>
+                        <option value="mercedes">3</option>
+                        <option value="audi">4</option>
+                    </select>
+                    <select>
+                        <option value="volvo">Jan</option>
+                        <option value="saab">Feb</option>
+                        <option value="marcedes">Mar</option>
+                        <option value="audi">Apr</option>
+                    </select>
+                    <select>
+                        <option value="volvo">1999</option>
+                        <option value="saab">2000</option>
+                        <option value="marcedes">2001</option>
+                        <option value="audi">2002</option>
+                    </select>
+
+                </div>
+                <div class="radio-box">
+                    <h4>Gender</h4>
+                    <label>
+                        <input type="radio" name="gender" value="male"> Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="male"> Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="male"> Custom
+                    </label>
+
+                </div>
+                <p>By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+                <div class="button-box">
+                    <button type="button" onclick="alert('Hello world!')">Sing Up!</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+
+</section>
 </body>
 </html>
